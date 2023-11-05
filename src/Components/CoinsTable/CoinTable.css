@@ -1,0 +1,22 @@
+.tableCell {
+  color: black !important;
+  font-weight: 700 !important;
+  font-family: Montserrat !important ;
+}
+.row {
+  background-color: #16171a;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+tr.row:hover {
+  background-color: #131111;
+}
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.css-6y92bt-MuiButtonBase-root-MuiPaginationItem-root {
+  color: gold !important;
+}
