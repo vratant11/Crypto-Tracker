@@ -23,7 +23,7 @@ ChartJS.register(LineElement, PointElement, LinearScale, Title, CategoryScale);
 function CoinInfo({ coin }) {
   const [historicalData, sethistoricalData] = useState();
   const [days, setDays] = useState(1);
-  const { Currency, Symbol } = CryptoState();
+  const { Currency } = CryptoState();
 
   const fetchHistoricalData = async () => {
     const { data } = await axios.get(HistoricalChart(coin.id, days, Currency));
@@ -32,6 +32,7 @@ function CoinInfo({ coin }) {
 
   useEffect(() => {
     fetchHistoricalData();
+    // eslint-disable-next-line
   }, [Currency, days]);
 
   const darkTheme = createTheme({

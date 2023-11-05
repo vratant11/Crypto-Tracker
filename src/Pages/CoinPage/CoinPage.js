@@ -4,7 +4,7 @@ import { CryptoState } from "../../Cryptocontext";
 import axios from "axios";
 import { SingleCoin } from "../../Config/Api";
 import CoinInfo from "../../Components/CoinInfo/CoinInfo";
-import { Box, Container, styled } from "@mui/system";
+import {  styled } from "@mui/system";
 import { LinearProgress, Typography } from "@mui/material";
 
 function CoinPage() {
@@ -18,7 +18,9 @@ function CoinPage() {
   };
   // console.log(coin);
   useEffect(() => {
+    
     fetchCoin();
+    // eslint-disable-next-line
   }, []);
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
